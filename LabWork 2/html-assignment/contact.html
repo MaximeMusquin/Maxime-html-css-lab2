@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- HTML Version 5-->
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<header>
+    <img src="assets/images/su_banner.gif">
+    <dvi class="nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Serivces</a></li>
+        <li><a class="active" href="contact.html">Contact Us</a></li>
+    </ul>
+    </dvi>
+</header>
+
+<body>
+
+<form action="/submit" method="post">
+    <fieldset>
+        <legend><b>Personal Information</b></legend>
+        <label for="firstName">First Name*: </label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name*: </label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="email">Email*: </label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>Please select the music genre(s) that you like:</label><br>
+        <input type="checkbox" id="classic" name="genre" value="Classic">
+        <label for="classic">Classic</label><br>
+
+        <input type="checkbox" id="jazz" name="genre" value="Jazz">
+        <label for="jazz">Jazz</label><br>
+
+        <input type="checkbox" id="blues" name="genre" value="Blues">
+        <label for="blues">Blues</label><br>
+
+        <input type="checkbox" id="instrumental" name="genre" value="Instrumental">
+        <label for="instrumental">Instrumental</label><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend><b>Your Message</b></legend>
+        <label for="heardAbout">How did you hear about us?</label>
+        <select id="heardAbout" name="heardAbout">
+            <option value="Website">Our Website</option>
+            <option value="Friend">Friend</option>
+            <option value="Advertisement">TV adv.</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label>Would you recommend us to your friends? </label>
+        <input type="radio" id="yes" name="recommend" value="Yes" checked>
+        <label for="yes">Yes</label>
+
+        <input type="radio" id="no" name="recommend" value="No">
+        <label for="no">No</label>
+
+        <input type="radio" id="maybe" name="recommend" value="Maybe">
+        <label for="maybe">Maybe</label><br><br>
+
+        <label for="request">Your request:</label><br>
+        <textarea id="request" name="request" rows="4" cols="50"></textarea><br><br>
+
+        <input type="checkbox" id="emailUpdates" name="emailUpdates" checked>
+        <label for="emailUpdates">Sign me up for email updates</label><br><br>
+
+        <input type="submit" value="Register">
+    </fieldset>
+</form>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23086.92796896235!2d-79.42786932568355!3d43.67175669999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0b64e1140d%3A0xd11156503e310196!2sSpa%20at%20Four%20Seasons%20Toronto!5e0!3m2!1sfr!2sca!4v1727039016472!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
+
